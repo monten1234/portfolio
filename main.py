@@ -3,7 +3,7 @@ from PIL import Image, ImageOps, ImageDraw
 
 
 def displayName():
-    image = "name.png"  # 画像ファイルのパスまたはURLを指定します
+    image = "name.png"  
     st.image(image, use_column_width=True)
     st.markdown("<br><br>", unsafe_allow_html=True)
 
@@ -31,7 +31,7 @@ def displayExperience():
             """,unsafe_allow_html=True)
     st.write("")
     st.markdown('<p style="font-family:serif; color:black; font-size: 22px; margin-left: 40px;">UI開発</p>', unsafe_allow_html=True)
-    img = Image.open('createUI.jpg')  # 画像のパスに自分の画像のパスを指定
+    img = Image.open('createUI.jpg')  
     rounded_image = round_corners(img, 80)
     # 2つのカラムを作成
     col1, col2 = st.columns(2)
@@ -93,7 +93,7 @@ def displayGoal():
             </div>
             """,unsafe_allow_html=True)
     st.write("")
-    st.markdown('<p style="font-family:serif; color:black; font-size: 22px; margin-left: 40px;">Next.jsを学んで、複雑なwebアプリ開発ができるようになりたい。</p>', unsafe_allow_html=True)
+    st.markdown('<p style="font-family:serif; color:black; font-size: 22px; margin-left: 40px;">Next.jsを学んで、複雑なwebサイト開発ができるようになりたい。</p>', unsafe_allow_html=True)
     st.markdown("<br><br>", unsafe_allow_html=True)
 
 
